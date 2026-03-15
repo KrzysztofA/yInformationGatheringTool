@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="WebScraper.Tests/WebScraper.Tests.csproj" Id="ab23dbf1-9133-44d5-a3bf-7e714f20ca70" />
+  <Project Path="WebScraper/WebScraper.csproj" />
+</Solution>
