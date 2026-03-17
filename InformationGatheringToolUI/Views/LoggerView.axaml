@@ -1,0 +1,45 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="InformationGatheringToolUI.Views.LoggerView">
+    <UserControl.DataContext>
+        <vm:LoggerViewModel/>
+    </UserControl.DataContext>
+
+    <Grid RowDefinitions="*,Auto">
+
+        <!-- LOG OUTPUT -->
+
+        <ListBox Items="{Binding Logs}">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+
+                    <TextBlock>
+                        <Run Text="{Binding Time}"/>
+                        <Run Text=" ["/>
+                        <Run Text="{Binding Level}"/>
+                        <Run Text="] "/>
+                        <Run Text="{Binding Message}"/>
+                    </TextBlock>
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
+        <!-- COMMAND LINE -->
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal">
+
+            <TextBox Width="300"/>
+
+            <Button Content="Clear"
+                    Command="{Binding ClearCommand}"/>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

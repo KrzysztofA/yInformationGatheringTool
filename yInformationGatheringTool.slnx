@@ -1,4 +1,14 @@
 <Solution>
-  <Project Path="WebScraper.Tests/WebScraper.Tests.csproj" Id="ab23dbf1-9133-44d5-a3bf-7e714f20ca70" />
-  <Project Path="WebScraper/WebScraper.csproj" />
+  <Project Path="Application/Application.csproj" Id="5e8832d1-b1e1-4eb9-9415-d4f7e5c212e5" />
+  <Project Path="Core/Core.csproj" Id="0719e06e-c581-4ee4-8b81-bdcc518c38e1" />
+  <Project Path="InformationGatheringToolUI/InformationGatheringToolUI.csproj" Id="fbb57f96-cfd9-407b-9a03-d812b87154c8" />
+  <Project Path="Infrastructure.Tests/Infrastructure.Tests.csproj" Id="08636c63-ce21-4abc-9e6f-6d02b148a47d">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+  <Project Path="Infrastructure/Infrastructure.csproj" Id="4c68ef5d-be37-4c14-8744-7eb0ae804e68" />
+  <Project Path="Services/Services.csproj" Id="1089f763-fe82-4fab-a0a7-d3ca0cb7b725" />
+  <Project Path="WebScraper.Tests/Services.Tests.csproj" Id="ab23dbf1-9133-44d5-a3bf-7e714f20ca70">
+    <Build Solution="Debug|*" Project="false" />
+  </Project>
+  <Project Path="WebScraper/InformationGatheringToolCMD.csproj" />
 </Solution>
